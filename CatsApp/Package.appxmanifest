@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/manifest/foundation/windows10" xmlns:mp="http://schemas.microsoft.com/appx/2014/phone/manifest" xmlns:uap="http://schemas.microsoft.com/appx/manifest/uap/windows10" IgnorableNamespaces="uap mp">
+  <Identity Name="CatsApp" Publisher="CN=Thomas Harris www.tomharris.net" Version="1.0.2.0" />
+  <mp:PhoneIdentity PhoneProductId="e078c0c9-f8f1-4f1b-b89a-1dda282b3321" PhonePublisherId="00000000-0000-0000-0000-000000000000" />
+  <Properties>
+    <DisplayName>Kitty Pal</DisplayName>
+    <PublisherDisplayName>www.tomharris.net</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Dependencies>
+    <TargetDeviceFamily Name="Windows.Universal" MinVersion="10.0.10069.0" MaxVersionTested="10.0.10069.0" />
+  </Dependencies>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="KittyPal" Executable="$targetnametoken$.exe" EntryPoint="CatsApp">
+      <uap:VisualElements DisplayName="Kitty Pal" Square150x150Logo="Assets\squareTile.png" Square44x44Logo="Assets\smallTile.png" Description="Get your daily fix for kitties. More cats than most people can handle. Created By www.tomharris.net" BackgroundColor="#000000">
+        <uap:SplashScreen Image="Assets\Splash.png" />
+        <uap:DefaultTile>
+          <uap:ShowNameOnTiles>
+            <uap:ShowOn Tile="square150x150Logo" />
+          </uap:ShowNameOnTiles>
+        </uap:DefaultTile>
+      </uap:VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClientServer" />
+  </Capabilities>
+</Package>
